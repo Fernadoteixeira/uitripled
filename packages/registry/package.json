@@ -7,8 +7,8 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "NODE_OPTIONS='--no-warnings' tsup",
-    "dev": "NODE_OPTIONS='--no-warnings' FORCE_COLOR=0 tsup --watch",
+    "build": "tsup",
+    "dev": "cross-env NODE_OPTIONS='--no-warnings' FORCE_COLOR=0 tsup --watch",
     "lint": "eslint src/",
     "type-check": "tsc --noEmit"
   },
