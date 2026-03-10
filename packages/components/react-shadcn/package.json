@@ -57,8 +57,8 @@
     }
   },
   "scripts": {
-    "build": "NODE_OPTIONS='--max-old-space-size=8192' tsup",
-    "dev": "NODE_OPTIONS='--max-old-space-size=8192' tsup --watch",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192 --no-warnings' tsup",
+    "dev": "NODE_OPTIONS='--max-old-space-size=8192 --no-warnings' FORCE_COLOR=0 tsup --watch",
     "lint": "eslint src/",
     "type-check": "tsc --noEmit"
   },

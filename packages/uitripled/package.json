@@ -10,8 +10,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "NODE_OPTIONS='--no-warnings' tsup",
+    "dev": "NODE_OPTIONS='--no-warnings' FORCE_COLOR=0 tsup --watch",
     "start": "node dist/index.js",
     "lint": "eslint src/"
   },
