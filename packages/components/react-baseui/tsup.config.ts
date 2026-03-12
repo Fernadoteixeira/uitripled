@@ -4,7 +4,16 @@ export default defineConfig({
   entry: ["src/index.ts", "src/components/**/*.tsx"],
   format: ["esm"],
   dts: false,
-  clean: true,
+  clean: false,
   sourcemap: false,
-  external: ["react", "react-dom", "framer-motion", "@uitripled/utils", "lucide-react", "@base-ui/react", "@uitripled/react-shadcn"],
+  external: [
+    "react",
+    "react-dom",
+    "framer-motion",
+    "@uitripled/utils",
+    "lucide-react",
+    "@base-ui/react",
+    "@uitripled/react-shadcn",
+  ],
+  silent: true,
 });

@@ -8,7 +8,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup",
-    "dev": "cross-env NODE_OPTIONS='--no-warnings' FORCE_COLOR=0 tsup --watch",
+    "dev": "tsup --watch",
     "lint": "eslint src/",
     "type-check": "tsc --noEmit"
   },

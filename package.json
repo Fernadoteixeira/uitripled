@@ -4,7 +4,7 @@
   "scripts": {
     "build": "turbo run build",
     "vercel-build": "turbo run build --filter=uitripled-docs",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --log-order=stream",
     "lint": "turbo run lint",
     "type-check": "turbo run type-check",
     "registry:generate": "pnpm dlx tsx packages/scripts/src/sync-registry.ts && pnpm dlx tsx packages/scripts/src/generate-registry-files.ts",

@@ -10,7 +10,16 @@ export default defineConfig({
   ],
   format: ["esm"],
   dts: false,
-  clean: true,
+  clean: false,
   sourcemap: false,
-  external: ["react", "react-dom", "framer-motion", "@uitripled/utils", "lucide-react", "@uitripled/react-baseui", "@uitripled/react-carbon"],
+  external: [
+    "react",
+    "react-dom",
+    "framer-motion",
+    "@uitripled/utils",
+    "lucide-react",
+    "@uitripled/react-baseui",
+    "@uitripled/react-carbon",
+  ],
+  silent: true,
 });

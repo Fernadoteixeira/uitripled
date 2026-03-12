@@ -4,7 +4,8 @@ export default defineConfig({
   entry: ["src/index.tsx"],
   format: ["esm"],
   dts: false,
-  clean: true,
+  clean: false,
   sourcemap: false,
   external: ["react", "framer-motion"],
+  silent: true,
 });
